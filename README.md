@@ -1,18 +1,31 @@
-## Getting Started
+<h1>README: Árvore Binária Completa em Java</h1>
+<h2>Visão Geral</h2>
+<p>Este é um projeto de implementação de uma árvore binária completa em Java. A árvore binária completa é uma estrutura de dados em que cada nó da árvore tem no máximo dois filhos, e todas as folhas estão no mesmo nível.</p>
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+<h2>Imagem da árvore binária completa<h2>
+<img src = "/imgReadme/ArvoreDefault.png">
 
-## Folder Structure
+<h2>Funcionalidades</h2>
+<h3>O projeto inclui as seguintes funcionalidades:</h3>
+<ul>
+<li>Inserção de um Elemento: Permite a inserção de um elemento na árvore.</li>
 
-The workspace contains two folders by default, where:
+<li>Remoção de um Elemento: Permite a remoção de um elemento da árvore.</li>
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+<li>Busca de um Elemento: Permite buscar um elemento na árvore e retorna seu status (encontrado/não encontrado).</li>
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+<li>Impressão da Árvore: Permite imprimir a árvore de forma visual.</li>
+</ul>
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+<h2>Pré-requisitos</h2>
+<p>Antes de executar o projeto, certifique-se de ter o Java JDK (Java Development Kit) instalado em seu sistema.</p>
 
-## Dependency Management
+<h1>Exemplo de Uso</h1>
+<p>Aqui está um exemplo de como usar a árvore binária completa em Java:<p>
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+<h1>Autores<h1>
+<ul>
+<li>César Willian</li>
+<li>Otávio Carneiro</li>
+<li>Rodrigo Munch</li>
+<ul>
