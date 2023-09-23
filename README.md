@@ -3,7 +3,7 @@
 <p>Este é um projeto de implementação de uma árvore binária completa em Java. A árvore binária completa é uma estrutura de dados em que cada nó da árvore tem no máximo dois filhos, e todas as folhas estão no mesmo nível.</p>
 
 <h2>Imagem da árvore binária completa<h2>
-<img src = "imgReadme/ArvoreDefault.png">
+<img src = "imgREADME/ArvoreDefault.png">
 
 <h2>Funcionalidades</h2>
 <h3>O projeto inclui as seguintes funcionalidades:</h3>
@@ -23,11 +23,11 @@
 <h1>Exemplo de Uso</h1>
 <p>Aqui está alguns exemplos de como usar a árvore binária completa em Java:<p>
 <h3>Inserir<h3>
-<img src = "imgReadme/Insert.png">
+<img src = "imgREADME/Insert.png">
 <h3>Remoção<h3>
-<img src = "imgReadme/Delete.png">
+<img src = "imgREADME/Delete.png">
 <h3>Busca<h3>
-<img src = "imgReadme/Search.png">
+<img src = "imgREADME/Search.png">
 
 
 <h1>Autores<h1>
