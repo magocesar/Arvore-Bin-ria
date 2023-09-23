@@ -8,9 +8,6 @@ public class programn {
         tree.insert(30);
         tree.insert(20);
         tree.insert(40);
-        tree.print();
-        System.out.println();
-        tree.delete(50);
-        tree.print();
-    }
+        tree.insert(45);
+        tree.print();    }
 }
