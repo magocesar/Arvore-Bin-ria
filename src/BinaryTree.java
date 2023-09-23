@@ -157,8 +157,30 @@ public class BinaryTree{
     }
 
     public void print(){
-        PreeoderTreeWalk(this.root);
-    }  
+        print(this.root, 10);
+    }
+
+    private void print(Node node, int space){
+        if(node == null){
+            return;
+        }
+
+        space += 10;
+
+        //Process right child first
+        print(node.right, space);
+
+        //Print current node after space
+        System.out.println();
+        for(int i = 10; i < space; i++){
+            System.out.print(" ");
+        }
+        System.out.print(node.data + "\n");
+
+
+        //Process left child
+        print(node.left, space);
+    }
 
     private void PreeoderTreeWalk(Node x){
         if(x != null){
