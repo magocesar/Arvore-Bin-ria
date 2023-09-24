@@ -17,7 +17,9 @@ public class BinaryTree{
             insert(this.root, data);
         }
     }
-
+    
+    // Method used to insert data into the binary tree comparing the values 
+    // and throwing it or to the right or to the left based on its value 
     private void insert(Node parent, int data){
         if(data < parent.data){
             if(parent.left == null){
@@ -34,10 +36,13 @@ public class BinaryTree{
         }
     }
 
+    // Public method of search
     public Node search(int data){
         return search(this.root, data);
     }
 
+    //Private method of search that uses recusivity to find the data and the side
+    // of the node that the data is linked to
     private Node search(Node node, int data){
         if(node == null || node.data == data){
             return node;
@@ -49,6 +54,7 @@ public class BinaryTree{
 
         return search(node.right, data);
     }
+
 
     //Finds the node with the smallest key greater than the x's key
     private Node Sucessor(Node x){
@@ -65,6 +71,7 @@ public class BinaryTree{
         return y;
     }
 
+    
     //Finds the node with the largest key smaller than the x's key
     private Node Predecessor(Node x){
         if(x.left != null){
@@ -80,6 +87,7 @@ public class BinaryTree{
         return y;
     }
 
+    
     //Finds the node with the smallest key
     private Node Min(Node x){
         while(x.left != null){
@@ -89,6 +97,7 @@ public class BinaryTree{
         return x;
     }
 
+    
     //Finds the node with the largest key
     private Node Max(Node x){
         while(x.right != null){
@@ -98,6 +107,7 @@ public class BinaryTree{
         return x;
     }
 
+    //Public method used to delete a given value of the node from the binary tree 
     public void delete(int data){
         Node node = search(data);
         if(node != null){
@@ -105,6 +115,8 @@ public class BinaryTree{
         }
     }
 
+    //Private method to delete the value of the node from tne binary tree, and realocate 
+    //the others node in order 
     private void delete(Node node){
         if(node.left == null){
             transplant(node, node.right);
@@ -130,14 +142,13 @@ public class BinaryTree{
     }
 
     private void transplant(Node u, Node v){
-
         //Replace u with v
         //If u is the root, v becomes the root
         if(u.parent == null){
             this.root = v;
         }
         
-        //u is not the root
+         //u is not the root
 
         //If u is the left child, v becomes the left child
         else if(u == u.parent.left){
@@ -156,10 +167,12 @@ public class BinaryTree{
         }
     }
 
+    //Public method used to print the binary tree 
     public void print(){
         print(this.root, 10);
     }
 
+    //Private method used to print the binary tree 
     private void print(Node node, int space){
         if(node == null){
             return;
@@ -182,29 +195,6 @@ public class BinaryTree{
         print(node.left, space);
     }
 
-    private void PreeoderTreeWalk(Node x){
-        if(x != null){
-            System.out.println(x.data);
-            PreeoderTreeWalk(x.left);
-            PreeoderTreeWalk(x.right);
-        }
-    }
-
-    private void InorderTreeWalk(Node x){
-        if(x != null){
-            InorderTreeWalk(x.left);
-            System.out.println(x.data);
-            InorderTreeWalk(x.right);
-        }
-    }
-
-    private void PostorderTreeWalk(Node x){
-        if(x != null){
-            PostorderTreeWalk(x.left);
-            PostorderTreeWalk(x.right);
-            System.out.println(x.data);
-        }
-    }
 }
 
 
